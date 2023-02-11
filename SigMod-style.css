@@ -243,3 +243,31 @@
   display: flex;
   justify-content: space-between;
 }
+
+.updated {
+	z-index: 99995;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px 15px;
+	background: #333;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center
+}
+
+.u_d{
+  color: #fff;
+  text-align: center;
+  margin: 10px
+}
+
+.u_b{
+  backround: #222;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
