@@ -1,0 +1,245 @@
+* {
+  outline: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+}
+
+#rx-mod-settings {
+  background: linear-gradient(-45deg, #b876ff, #1f2a9e, #b876ff);
+  background-size: 300% 300%;
+  padding: 30px;
+  border-radius: 15px;
+  width: 350px;
+  min-height: 200px;
+  top: 1em;
+  left: 50%;
+  margin-left: -175px;
+  z-index: 99999;
+  box-shadow: 0 0 15px #000;
+  position: fixed;
+  animation: change 5s ease-in-out infinite;
+  text-align: center;
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+#rx-mod-settings input.keybinding {
+  max-width: 20px;
+  border: 1px solid #ccc;
+  padding: 0;
+  text-align: center;
+  margin-right: 5px;
+}
+
+#rx-mod-settings input[type="submit"] {
+  margin-top: 15px;
+}
+
+#rx-mod-settings.hidden {
+  display: none;
+}
+
+#Cursed-Button {
+  top: 50%;
+  width: 100px;
+  height: 5vh;
+}
+
+#rx-mod-wrap {
+  color: #fff;
+  min-height: 25px;
+  position: fixed;
+  top: 15%;
+  width: 100px;
+  z-index: 99997;
+  transition: 0.3s;
+  user-select: none;
+  border: none;
+}
+
+#rx-mod-wrap button {
+  cursor: pointer;
+  color: #333;
+}
+
+#rx-mod-wrap span.text {
+  margin-left: 15px;
+  padding-left: 15px;
+  border-left: 1px solid #dfdfdf;
+}
+
+#text-block,
+#left_ad_block,
+#ad_bottom,
+.ad-block,
+.ad-block-left,
+.ad-block-right {
+  display: none;
+}
+
+.CloseBtn {
+  outline: none;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 16px;
+  transition: 0.3s;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  width: 45px;
+  position: absolute;
+  left: 80%;
+  top: 0;
+}
+
+.CloseBtn:hover {
+  background-color: #da7272;
+  transition: 0.3s;
+}
+
+.SettingsBtn {
+  background-color: transparent;
+}
+
+.keybinding {
+  outline: none;
+  color: #fff;
+  background-color: #303030;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.Sett {
+  color: #fff;
+  user-select: none;
+  font-weight: 500;
+}
+
+.text {
+  color: #fff;
+  font-weight: 500;
+  user-select: none;
+}
+
+.titleImg {
+  width: 100%;
+  height: 150px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.JoinDc {
+  background-color: transparent;
+  width: 75%;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.JoinDc:hover {
+  background-color: #5865f2;
+  transition: 0.3s;
+}
+
+.StylishNames {
+  display: flex;
+  justify-content: space-between;
+}
+
+.divBtn {
+  background-color: transparent;
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  margin: 5px;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.divBtn:hover {
+  background-color: #5865f2;
+  transition: 0.3s;
+}
+
+.Btn01 {
+  width: 100%;
+}
+
+.Btn02 {
+  width: 100%;
+}
+
+.ColorImage {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#SettingsButton {
+  background-color: transparent;
+  height: 30px;
+  background-image: url("https://i.ibb.co/pJhSvHJ/icons8-zahnrad-30.png");
+  width: 30px;
+  background-size: cover;
+  border: none;
+  outline: none;
+}
+
+#SettingsButton:hover {
+  opactiy: 0.5;
+}
+
+@media screen and (max-height: 900px) {
+  #rx-mod-wrap {
+    top: 21%;
+  }
+}
+
+.SettingsTitle {
+  position: absolute;
+  font-size: 24px;
+  top: 2%;
+}
+
+.Youtube {
+  background-color: transparent;
+
+  height: 30px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.3s;
+  margin: 5px;
+  width: 140px;
+}
+
+.Youtube:hover {
+  background-color: #da7272;
+  transition: 0.3s;
+}
+
+.YT-BTNS {
+  display: flex;
+  justify-content: space-between;
+}
