@@ -1,157 +1,136 @@
 *{
-outline: none;
+     outline: none;
 }
-
-.flex {
-	display: flex;
-    justify-content: center;
+ .flex {
+     display: flex;
+     justify-content: center;
 }
-
-#rx-mod-settings {
-	background-color: #222;
-    padding: 20px 30px 20px 20px;
-	border-radius: 15px;
-	width: 650px;
-	max-height: 430px;
-	top: -100%;
-	left: 50%;
-	margin-left: -325px;
-	z-index: 99999;
-	box-shadow: 0 0 15px #000;
-	position: fixed;
-    transition: .5s ease-in-out;
-    font-family: 'Montserrat', sans-serif;
+ #rx-mod-settings {
+     background-color: #222;
+     padding: 20px 30px 20px 20px;
+     border-radius: 15px;
+     width: 650px;
+     max-height: 430px;
+     top: -100%;
+     left: 50%;
+     margin-left: -325px;
+     z-index: 99999;
+     box-shadow: 0 0 15px #000;
+     position: fixed;
+     transition: .5s ease-in-out;
+     font-family: 'Montserrat', sans-serif;
 }
-
-.hidden {
-	display: none;
+ .hidden {
+     display: none;
 }
-
-#text-block,#left_ad_block,#ad_bottom,.ad-block,.ad-block-left,.ad-block-right {
-display: none;
+ #text-block,#left_ad_block,#ad_bottom,.ad-block,.ad-block-left,.ad-block-right {
+     display: none;
 }
-
-.CloseBtn{
-outline: none;
-padding: 10px;
-font-size: 18px;
-transition: all .3s;
-background-color: transparent;
-color: #fff;
-border-radius: 15px;
-border: none;
-text-align: center;
-width: 48px;
-background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/Close.png');
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-
+ .CloseBtn{
+     outline: none;
+     padding: 10px;
+     font-size: 18px;
+     transition: all .3s;
+     background-color: transparent;
+     color: #fff;
+     border-radius: 15px;
+     border: none;
+     text-align: center;
+     width: 48px;
+     background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/Close.png');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
 }
-
-.keybinding{
-    outline: none;
-    color: #fff;
-    background-color: #222;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-weight: 500;
-	max-width: 20px;
-	text-align: center;
-	margin-right: 8px;
-    height: 20px;
+ .keybinding{
+     outline: none;
+     color: #fff;
+     background-color: #222;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-weight: 500;
+     max-width: 20px;
+     text-align: center;
+     margin-right: 8px;
+     height: 20px;
 }
-
-.text{
-color: #fff;
-font-weight: 500;
-user-select: none;
+ .text{
+     color: #fff;
+     font-weight: 500;
+     user-select: none;
 }
-
-.titleImg {
-  height: 50px;
-  width: 50px;
-  border-radius: 5px;
-  background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/SigmodV2.png');
-  background-size: 200% 150%;
-  background-position: center;
-  margin-right: 10px;
+ .titleImg {
+     height: 50px;
+     width: 50px;
+     border-radius: 5px;
+     background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/SigmodV2.png');
+     background-size: 200% 150%;
+     background-position: center;
+     margin-right: 10px;
 }
-
-.settings-button{
-background-color: transparent;
-height: 30px;
-background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/settings.png');
-width: 30px;
-background-size: cover;
-border: none;
-outline: none;
-position: absolute;
-z-index: 99991;
-top: 20%;
-left: 0;
+ .settings-button{
+     background-color: transparent;
+     height: 30px;
+     background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/settings.png');
+     width: 30px;
+     background-size: cover;
+     border: none;
+     outline: none;
+     position: absolute;
+     z-index: 99991;
+     top: 20%;
+     left: 0;
 }
-
-.ModMenu-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+ .ModMenu-inner {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
-
-
-
-.card {
-  width: 160px;
-  background: #333;
-  border-radius: 10px;
-  padding: 5px;
-  display: flex;
-  margin: 0 5px;
-  align-items: center;
-  flex-direction: column;
+ .card {
+     width: 160px;
+     background: #333;
+     border-radius: 10px;
+     padding: 5px;
+     display: flex;
+     margin: 0 5px;
+     align-items: center;
+     flex-direction: column;
 }
-
-.Sett {
-  color: #fff;
-  user-select: none;
-  font-weight: 500;
+ .Sett {
+     color: #fff;
+     user-select: none;
+     font-weight: 500;
 }
-
-.card-bottom {
-  text-align: center;
-  padding: 10px 20px;
-  background: #333;
-  color: #ddd;
-  user-select: none;
-  border-radius: 10px;
-  width: calc(100% - 100px);
+ .card-bottom {
+     text-align: center;
+     padding: 10px 20px;
+     background: #333;
+     color: #ddd;
+     user-select: none;
+     border-radius: 10px;
+     width: calc(100% - 100px);
 }
-
-.cards-center {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+ .cards-center {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 20px;
 }
-
-.top-mod-menu{
-display: flex;
-justify-content: space-between;
-align-items: center;
+ .top-mod-menu{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
 }
-
-.top-left-mod-menu{
-display: flex;
-align-items: center;
+ .top-left-mod-menu{
+     display: flex;
+     align-items: center;
 }
-
-#rx-mod-settings hr{
-margin: 15px 0;
+ #rx-mod-settings hr{
+     margin: 15px 0;
 }
-
-.checkbox-wrapper-4 * {
+ .checkbox-wrapper-4 * {
      box-sizing: border-box;
 }
-.checkbox-wrapper-4 .cbx {
+ .checkbox-wrapper-4 .cbx {
      -webkit-user-select: none;
      user-select: none;
      cursor: pointer;
@@ -161,20 +140,20 @@ margin: 15px 0;
      transition: all 0.2s ease;
      display: inline-block;
 }
-.checkbox-wrapper-4 .cbx:not(:last-child) {
+ .checkbox-wrapper-4 .cbx:not(:last-child) {
      margin-right: 6px;
 }
-.checkbox-wrapper-4 .cbx:hover {
+ .checkbox-wrapper-4 .cbx:hover {
      background: rgba(0,119,255,0.06);
 }
-.checkbox-wrapper-4 .cbx span {
+ .checkbox-wrapper-4 .cbx span {
      float: left;
      vertical-align: middle;
      transform: translate3d(0, 0, 0);
      color: #fff;
      font-weight: 500;
 }
-.checkbox-wrapper-4 .cbx span:first-child {
+ .checkbox-wrapper-4 .cbx span:first-child {
      position: relative;
      width: 18px;
      height: 18px;
@@ -184,7 +163,7 @@ margin: 15px 0;
      transition: all 0.2s ease;
      box-shadow: 0 1px 1px rgba(0,16,75,0.05);
 }
-.checkbox-wrapper-4 .cbx span:first-child svg {
+ .checkbox-wrapper-4 .cbx span:first-child svg {
      position: absolute;
      top: 3px;
      left: 2px;
@@ -199,34 +178,33 @@ margin: 15px 0;
      transition-delay: 0.1s;
      transform: translate3d(0, 0, 0);
 }
-.checkbox-wrapper-4 .cbx span:last-child {
+ .checkbox-wrapper-4 .cbx span:last-child {
      padding-left: 8px;
      line-height: 18px;
 }
-.checkbox-wrapper-4 .cbx:hover span:first-child {
+ .checkbox-wrapper-4 .cbx:hover span:first-child {
      border-color: #07f;
 }
-.checkbox-wrapper-4 .inp-cbx {
+ .checkbox-wrapper-4 .inp-cbx {
      position: absolute;
      visibility: hidden;
 }
-.checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child {
+ .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child {
      background: #07f;
      border-color: #07f;
      animation: wave-4 0.4s ease;
 }
-.checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child svg {
+ .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child svg {
      stroke-dashoffset: 0;
 }
-.checkbox-wrapper-4 .inline-svg {
+ .checkbox-wrapper-4 .inline-svg {
      position: absolute;
      width: 0;
      height: 0;
      pointer-events: none;
      user-select: none;
 }
-
-@media screen and (max-width: 640px) {
+ @media screen and (max-width: 640px) {
      .checkbox-wrapper-4 .cbx {
          width: 100%;
          display: inline-block;
@@ -252,219 +230,194 @@ margin: 15px 0;
          transform: scale(0.9);
     }
 }
-
-.smallText {
-    font-size: 12px;
+ .smallText {
+     font-size: 12px;
 }
-
-.ModButton{
-    background-color: #222;
-    border: 2px solid transparent;
-    margin: 5px 0;
-    padding: 5px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transition: all .3s;
-    width: 90%;
+ .ModButton{
+     background-color: #222;
+     border: 2px solid transparent;
+     margin: 5px 0;
+     padding: 5px;
+     border-radius: 10px;
+     color: #fff;
+     font-size: 16px;
+     transition: all .3s;
+     width: 90%;
 }
-
-.ModButton:hover{
-  border: 2px solid #7C00FF;
+ .ModButton:hover{
+     border: 2px solid #7C00FF;
 }
-
-.ModTextField {
-    background-color: #222;
-    border: 2px solid transparent;
-    margin: 5px 0;
-    padding: 5px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transition: all .3s;
+ .ModTextField {
+     background-color: #222;
+     border: 2px solid transparent;
+     margin: 5px 0;
+     padding: 5px;
+     border-radius: 10px;
+     color: #fff;
+     font-size: 16px;
+     transition: all .3s;
 }
-
-.ModTextField:hover{
-  border: 2px solid #7C00FF;
+ .ModTextField:hover{
+     border: 2px solid #7C00FF;
 }
-
-.tab{
-position: absolute;
-top: 20%;
-left: 0;
-width: 100%;
-background: #222;
-height: 80%;
-border-bottom-right-radius: 15px;
-border-bottom-left-radius: 15px;
+ .tab{
+     position: absolute;
+     top: 20%;
+     left: 0;
+     width: 100%;
+     background: #222;
+     height: 80%;
+     border-bottom-right-radius: 15px;
+     border-bottom-left-radius: 15px;
 }
-
-@media screen and (max-height: 900px) {
-  #rx-mod-wrap{
-    top: 21%;
-  }
+ @media screen and (max-height: 900px) {
+     #rx-mod-wrap{
+         top: 21%;
+    }
 }
-
-.BackBtn{
-    outline: none;
-    padding: 8px;
-    font-size: 18px;
-    background-color: transparent;
-    transition: all .3s;
-    color: #fff;
-    border-radius: 15px;
-    border: 2px solid transparent;
-    text-align: center;
-    width: 48px;
-    background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/back.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    margin: 0 10px;
-    display: none;
+ .BackBtn{
+     outline: none;
+     padding: 8px;
+     font-size: 18px;
+     background-color: transparent;
+     transition: all .3s;
+     color: #fff;
+     border-radius: 15px;
+     border: 2px solid transparent;
+     text-align: center;
+     width: 48px;
+     background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/back.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     margin: 0 10px;
+     display: none;
 }
-
-#action-top-menu{
-    display: flex;
+ #action-top-menu{
+     display: flex;
 }
-
-.tabTitle{
+ .tabTitle{
      color: #EEE;
      text-align: center;
 }
-
-#modButtonsDiv{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+ #modButtonsDiv{
+     width: 100%;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
 }
-
-.big_card{
-width: 290px;
-background: #333;
-padding: 6px;
-border-radius: 5px;
-margin: 0 10px;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+ .big_card{
+     width: 290px;
+     background: #333;
+     padding: 6px;
+     border-radius: 5px;
+     margin: 0 10px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
 }
-
-.addNames{
-display: flex;
-align-items: center;
-background: #333;
+ .addNames{
+     display: flex;
+     align-items: center;
+     background: #333;
 }
-
-.kmp {
-display: flex;
-margin: 7px 0;
+ .kmp {
+     display: flex;
+     margin: 7px 0;
 }
-
-.NameLabel {
-  cursor: pointer;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+ .NameLabel {
+     cursor: pointer;
+     font-weight: 500;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: #fff;
 }
-
-.delName {
-  font-weight: 500;
-  background: #e17e7e;
-  height: 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 10px;
-  margin-left: 5px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
+ .delName {
+     font-weight: 500;
+     background: #e17e7e;
+     height: 20px;
+     border: none;
+     border-radius: 5px;
+     font-size: 10px;
+     margin-left: 5px;
+     color: #fff;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 20px;
 }
-
-.snOverlay{
-height: 196px;
-width: 100%;
+ .snOverlay{
+     height: 196px;
+     width: 100%;
 }
-
-#savedNames {
-  display: flex;
-  overflow: hidden;
-  overflow-y: scroll;
-  max-height: 200px;
-  min-width: 280px;
-  flex-wrap: wrap;
+ #savedNames {
+     display: flex;
+     overflow: hidden;
+     overflow-y: scroll;
+     max-height: 200px;
+     min-width: 280px;
+     flex-wrap: wrap;
 }
-
-#savedNames::-webkit-scrollbar {
-  width: 10px;
+ #savedNames::-webkit-scrollbar {
+     width: 10px;
 }
-#savedNames::-webkit-scrollbar-track {
-  background: #222;
-  border-radius: 5px;
+ #savedNames::-webkit-scrollbar-track {
+     background: #222;
+     border-radius: 5px;
 }
-#savedNames::-webkit-scrollbar-thumb {
-  background-color: #555;
-  border-radius: 20px;
+ #savedNames::-webkit-scrollbar-thumb {
+     background-color: #555;
+     border-radius: 20px;
 }
-#savedNames::-webkit-scrollbar-thumb:hover {
-  background: #666;
+ #savedNames::-webkit-scrollbar-thumb:hover {
+     background: #666;
 }
-
-.NameDiv {
-  display: flex;
-  background: #222;
-  border-radius: 5px;
-  margin: 5px;
-  padding: 3px 8px;
-  height: 34px;
-  align-items: center;
+ .NameDiv {
+     display: flex;
+     background: #222;
+     border-radius: 5px;
+     margin: 5px;
+     padding: 3px 8px;
+     height: 34px;
+     align-items: center;
 }
-
-.efCard{
-    text-align: center;
-    margin: 0 15px;
-    width: 180px
+ .efCard{
+     text-align: center;
+     margin: 0 15px;
+     width: 180px 
 }
-
-.center1{
-display: flex;
-justify-content: center;
-align-items: center;
-height: 80%;
-flex-wrap: wrap;
+ .center1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 80%;
+     flex-wrap: wrap;
 }
-
-.efInput{
-    width: 82px;
-    font-size: 14px
+ .efInput{
+     width: 82px;
+     font-size: 14px 
 }
-
-.nameMaker{
-display: flex;
-flex-direction: column;
-align-items: center;
+ .nameMaker{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
 }
-
-.ModSelect{
-    background-color: #222;
-    border: 2px solid transparent;
-    margin: 5px 0;
-    padding: 5px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    width: 82px;
-    font-size: 14px;
-    transition: all .3s;
-    -webkit-appearance: none;
-    cursor: pointer;
+ .ModSelect{
+     background-color: #222;
+     border: 2px solid transparent;
+     margin: 5px 0;
+     padding: 5px;
+     border-radius: 10px;
+     color: #fff;
+     font-size: 16px;
+     width: 82px;
+     font-size: 14px;
+     transition: all .3s;
+     -webkit-appearance: none;
+     cursor: pointer;
 }
-
-.ModSelect:hover{
-  border: 2px solid #7C00FF;
+ .ModSelect:hover{
+     border: 2px solid #7C00FF;
 }
+ 
