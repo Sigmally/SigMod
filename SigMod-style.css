@@ -13,7 +13,7 @@ outline: none;
 	border-radius: 15px;
 	width: 650px;
 	max-height: 430px;
-	top: -50%;
+	top: -100%;
 	left: 50%;
 	margin-left: -325px;
 	z-index: 99999;
