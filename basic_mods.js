@@ -7,7 +7,7 @@ DelSkinBtn.addEventListener("click", () => {
         return;
     } else if (skinIdInput == "") {
         alert('Please enter a valid skin id. Go to the shop, hover over the skin you want to delete a inspect the button element. There you can find the id of the skin. Example for Chet Skin: "<div id="5ff799de9d6ee153fbb39a71" onclick="changeSkin(\'/skin/free/Chet.png\', \'5ff799de9d6ee153fbb39a71\')" class="button-success">use</div>", Copy the id (5ff799de9d6ee153fbb39a71) and paste it in the skin Id field.')
-        return
+        return;
     }
     unsafeWindow.delSkin(skinIdInput, skinCategoryInput);
 });
