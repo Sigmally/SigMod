@@ -6,418 +6,170 @@
      justify-content: center;
 }
  #rx-mod-settings {
-     background-color: #222;
-     padding: 20px 30px 20px 20px;
+     background: #644999;
+     background-size: 300% 300%;
+     padding: 30px;
      border-radius: 15px;
-     width: 650px;
-     max-height: 430px;
-     top: -100%;
+     width: 350px;
+     min-height: 200px;
+     top: 1em;
      left: 50%;
-     margin-left: -325px;
+     margin-left: -175px;
      z-index: 99999;
-     box-shadow: 0 0 15px #000;
+     box-shadow: 0 0 40px #8D00FF;
      position: fixed;
-     transition: .5s ease-in-out;
-     font-family: 'Montserrat', sans-serif;
+     text-align: center;
 }
- .hidden {
+ #rx-mod-settings input.keybinding {
+     max-width: 20px;
+     border: 1px solid #ccc;
+     padding: 0;
+     text-align: center;
+     margin-right: 5px;
+     outline: none;
+     color: #fff;
+     background-color: transparent;
+     border: 1px solid #fff;
+     border-radius: 5px;
+     font-weight: 500;
+}
+ #rx-mod-settings.hidden {
      display: none;
+}
+ #rx-mod-wrap {
+     color:#fff;
+     min-height: 25px;
+     position: fixed;
+     top: 15%;
+     width: 100px;
+     z-index:99997;
+     transition: .3s;
+     user-select: none;
+     border: none;
+}
+ #rx-mod-wrap span.text {
+     margin-left: 15px;
+     padding-left: 15px;
+     border-left: 1px solid #dfdfdf;
 }
  #text-block,#left_ad_block,#ad_bottom,.ad-block,.ad-block-left,.ad-block-right {
      display: none;
 }
+ .cztop{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+ .SettingsTitle{
+     font-size: 32px;
+     color: #EEE;
+     margin-left: 10px;
+}
  .CloseBtn{
      outline: none;
-     padding: 10px;
-     font-size: 18px;
-     transition: all .3s;
      background-color: transparent;
+     padding: 10px;
+     font-size: 16px;
+     transition: all .3s;
      color: #fff;
      border-radius: 15px;
-     border: none;
-     text-align: center;
+     border: 2px solid #4C2B8D;
      width: 48px;
-     background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/Close.png');
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
 }
- .keybinding{
-     outline: none;
+ .CloseBtn:hover{
+     border: 2px solid #5600FF;
+}
+ .Sett{
      color: #fff;
-     background-color: #222;
-     border: 1px solid #ddd;
-     border-radius: 5px;
+     user-select: none;
      font-weight: 500;
-     max-width: 20px;
-     text-align: center;
-     margin-right: 8px;
-     height: 20px;
 }
  .text{
      color: #fff;
      font-weight: 500;
      user-select: none;
 }
- .titleImg {
-     height: 50px;
-     width: 50px;
-     border-radius: 5px;
-     background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/SigmodV2.png');
-     background-size: 200% 150%;
-     background-position: center;
-     margin-right: 10px;
+ .cztopleft{
+     display: flex;
+     align-items: center;
 }
- .settings-button{
+ .titleImg{
+     width: 50px;
+     height: 50px;
+     border-radius: 20px;
+     object-fit: cover;
+}
+ .JoinDc{
+     background-color: transparent;
+     width: 75%;
+     height: 30px;
+     border: 1px solid #fff;
+     border-radius: 5px;
+     color: #fff;
+     transition: .3s;
+}
+ .JoinDc:hover{
+     background-color: #5865F2;
+     transition: .3s;
+}
+ .modContainer {
+     display: flex;
+     justify-content: space-between;
+}
+ .modButton{
+     background-color: transparent;
+     border: 1px solid #fff;
+     border-radius: 5px;
+     color: #fff;
+     transition: all .3s;
+     outline: none;
+     padding: 5px;
+     width: 60%;
+     margin: 0 5px;
+     font-size: 13px;
+}
+ .modButton:hover {
+     background-color: #5865F2;
+}
+ .ColorImage{
+     width: 50px;
+     height: 50px;
+     cursor: pointer;
+}
+ #SettingsButton{
      background-color: transparent;
      height: 30px;
-     background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/settings.png');
+     background-image: url('https://i.ibb.co/pJhSvHJ/icons8-zahnrad-30.png');
      width: 30px;
      background-size: cover;
      border: none;
      outline: none;
-     position: absolute;
-     z-index: 99991;
-     top: 20%;
-     left: 0;
-}
- .ModMenu-inner {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-}
- .card {
-     width: 160px;
-     background: #333;
-     border-radius: 10px;
-     padding: 5px;
-     display: flex;
-     margin: 0 5px;
-     align-items: center;
-     flex-direction: column;
-}
- .Sett {
-     color: #fff;
-     user-select: none;
-     font-weight: 500;
-}
- .card-bottom {
-     text-align: center;
-     padding: 10px 20px;
-     background: #333;
-     color: #ddd;
-     user-select: none;
-     border-radius: 10px;
-     width: calc(100% - 100px);
-}
- .cards-center {
-     display: flex;
-     justify-content: center;
-     margin-bottom: 20px;
-}
- .top-mod-menu{
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-}
- .top-left-mod-menu{
-     display: flex;
-     align-items: center;
-}
- #rx-mod-settings hr{
-     margin: 15px 0;
-}
- .checkbox-wrapper-4 * {
-     box-sizing: border-box;
-}
- .checkbox-wrapper-4 .cbx {
-     -webkit-user-select: none;
-     user-select: none;
-     cursor: pointer;
-     padding: 6px 8px;
-     border-radius: 6px;
-     overflow: hidden;
-     transition: all 0.2s ease;
-     display: inline-block;
-}
- .checkbox-wrapper-4 .cbx:not(:last-child) {
-     margin-right: 6px;
-}
- .checkbox-wrapper-4 .cbx:hover {
-     background: rgba(0,119,255,0.06);
-}
- .checkbox-wrapper-4 .cbx span {
-     float: left;
-     vertical-align: middle;
-     transform: translate3d(0, 0, 0);
-     color: #fff;
-     font-weight: 500;
-}
- .checkbox-wrapper-4 .cbx span:first-child {
-     position: relative;
-     width: 18px;
-     height: 18px;
-     border-radius: 4px;
-     transform: scale(1);
-     border: 1px solid #cccfdb;
-     transition: all 0.2s ease;
-     box-shadow: 0 1px 1px rgba(0,16,75,0.05);
-}
- .checkbox-wrapper-4 .cbx span:first-child svg {
-     position: absolute;
-     top: 3px;
-     left: 2px;
-     fill: none;
-     stroke: #fff;
-     stroke-width: 2;
-     stroke-linecap: round;
-     stroke-linejoin: round;
-     stroke-dasharray: 16px;
-     stroke-dashoffset: 16px;
-     transition: all 0.3s ease;
-     transition-delay: 0.1s;
-     transform: translate3d(0, 0, 0);
-}
- .checkbox-wrapper-4 .cbx span:last-child {
-     padding-left: 8px;
-     line-height: 18px;
-}
- .checkbox-wrapper-4 .cbx:hover span:first-child {
-     border-color: #07f;
-}
- .checkbox-wrapper-4 .inp-cbx {
-     position: absolute;
-     visibility: hidden;
-}
- .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child {
-     background: #07f;
-     border-color: #07f;
-     animation: wave-4 0.4s ease;
-}
- .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child svg {
-     stroke-dashoffset: 0;
-}
- .checkbox-wrapper-4 .inline-svg {
-     position: absolute;
-     width: 0;
-     height: 0;
-     pointer-events: none;
-     user-select: none;
-}
- @media screen and (max-width: 640px) {
-     .checkbox-wrapper-4 .cbx {
-         width: 100%;
-         display: inline-block;
-    }
-}
- @-moz-keyframes wave-4 {
-     50% {
-         transform: scale(0.9);
-    }
-}
- @-webkit-keyframes wave-4 {
-     50% {
-         transform: scale(0.9);
-    }
-}
- @-o-keyframes wave-4 {
-     50% {
-         transform: scale(0.9);
-    }
-}
- @keyframes wave-4 {
-     50% {
-         transform: scale(0.9);
-    }
-}
- .smallText {
-     font-size: 12px;
-}
- .ModButton{
-     background-color: #222;
-     border: 2px solid transparent;
-     margin: 5px 0;
-     padding: 5px;
-     border-radius: 10px;
-     color: #fff;
-     font-size: 16px;
-     transition: all .3s;
-     width: 90%;
-}
- .ModButton:hover{
-     border: 2px solid #7C00FF;
-}
- .ModTextField {
-     background-color: #222;
-     border: 2px solid transparent;
-     margin: 5px 0;
-     padding: 5px;
-     border-radius: 10px;
-     color: #fff;
-     font-size: 16px;
-     transition: all .3s;
-}
- .ModTextField:hover{
-     border: 2px solid #7C00FF;
-}
- .tab{
-     position: absolute;
-     top: 20%;
-     left: 0;
-     width: 100%;
-     background: #222;
-     height: 80%;
-     border-bottom-right-radius: 15px;
-     border-bottom-left-radius: 15px;
 }
  @media screen and (max-height: 900px) {
      #rx-mod-wrap{
          top: 21%;
     }
 }
- .BackBtn{
-     outline: none;
-     padding: 8px;
-     font-size: 18px;
+ @media screen and (max-height: 800px) {
+     #rx-mod-settings{
+         top: 0 
+    }
+}
+ .Youtube{
      background-color: transparent;
-     transition: all .3s;
+     height: 30px;
+     border: 1px solid #fff;
+     border-radius: 5px;
      color: #fff;
-     border-radius: 15px;
-     border: 2px solid transparent;
-     text-align: center;
-     width: 48px;
-     background-image: url('https://raw.githubusercontent.com/Sigmally/SigMod/main/images/back.png');
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
-     margin: 0 10px;
-     display: none;
-}
- #action-top-menu{
-     display: flex;
-}
- .tabTitle{
-     color: #EEE;
-     text-align: center;
-}
- #modButtonsDiv{
-     width: 100%;
-     display: flex;
-     align-items: center;
-     flex-direction: column;
-}
- .big_card{
-     width: 290px;
-     background: #333;
-     padding: 6px;
-     border-radius: 5px;
-     margin: 0 10px;
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: center;
-}
- .addNames{
-     display: flex;
-     align-items: center;
-     background: #333;
-}
- .kmp {
-     display: flex;
-     margin: 7px 0;
-}
- .NameLabel {
-     cursor: pointer;
-     font-weight: 500;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     color: #fff;
-}
- .delName {
-     font-weight: 500;
-     background: #e17e7e;
-     height: 20px;
-     border: none;
-     border-radius: 5px;
-     font-size: 10px;
-     margin-left: 5px;
-     color: #fff;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     width: 20px;
-}
- .snOverlay{
-     height: 196px;
-     width: 100%;
-}
- #savedNames {
-     display: flex;
-     overflow: hidden;
-     overflow-y: scroll;
-     max-height: 200px;
-     min-width: 280px;
-     flex-wrap: wrap;
-}
- #savedNames::-webkit-scrollbar {
-     width: 10px;
-}
- #savedNames::-webkit-scrollbar-track {
-     background: #222;
-     border-radius: 5px;
-}
- #savedNames::-webkit-scrollbar-thumb {
-     background-color: #555;
-     border-radius: 20px;
-}
- #savedNames::-webkit-scrollbar-thumb:hover {
-     background: #666;
-}
- .NameDiv {
-     display: flex;
-     background: #222;
-     border-radius: 5px;
+     transition: .3s;
      margin: 5px;
-     padding: 3px 8px;
-     height: 34px;
-     align-items: center;
+     width: 140px;
 }
- .efCard{
-     text-align: center;
-     margin: 0 15px;
-     width: 180px 
+ .Youtube:hover{
+     background-color: #DA7272;
+     transition: .3s;
 }
- .center1{
+ .YT-BTNS{
      display: flex;
-     justify-content: center;
-     align-items: center;
-     height: 80%;
-     flex-wrap: wrap;
+     justify-content: space-between;
 }
- .efInput{
-     width: 82px;
-     font-size: 14px 
-}
- .nameMaker{
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-}
- .ModSelect{
-     background-color: #222;
-     border: 2px solid transparent;
-     margin: 5px 0;
-     padding: 5px;
-     border-radius: 10px;
-     color: #fff;
-     font-size: 16px;
-     width: 82px;
-     font-size: 14px;
-     transition: all .3s;
-     -webkit-appearance: none;
-     cursor: pointer;
-}
- .ModSelect:hover{
-     border: 2px solid #7C00FF;
-}
- 
